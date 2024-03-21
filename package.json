@@ -1,0 +1,23 @@
+{
+  "name": "postjs",
+  "version": "1.0.0",
+  "description": "handling of uploaded image on website",
+  "main": "app.js",
+  "scripts": {
+    "devStart": "nodemon app.js"
+  },
+  "keywords": [
+    "post",
+    "image",
+    "html"
+  ],
+  "author": "mwaiwathu chatha",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.19.1",
+    "mongoose": "^8.2.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}
