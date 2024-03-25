@@ -35,16 +35,11 @@ function setup(){
     });
     picture.hide();
     background(0);
+    textSize(90)
     mobilenet=ml5.imageClassifier('MobileNet',modelReady=()=>{
     console.log('Model is ready') })
     
-   /* createCanvas(600,350);
-    picture=createImg('BrainAi.jpg', imageReady=()=>{
-        image(picture,0,0,width,height);
-    });
-    picture.hide();
-    background(0);
- 
+    
     mobilenet=ml5.imageClassifier('MobileNet',modelReady=()=>{
       console.log('Model is ready!');
       mobilenet.predict(picture,gotResult=(error, results)=>{
@@ -58,13 +53,12 @@ function setup(){
             let probTrunc=prob.toFixed(3);
             fill(0);
             textSize(90);
-            text(label,40,70);
             createP('This has been identified as a '+label);
             createP('Confidence: '+probTrunc+'%');
         }
 
       })  
-    });*/
+    });
 }
     </script>  
 </body>
